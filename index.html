@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suficy | Portafolio de Desarrollador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    header, section {
+      position: relative;
+      z-index: 2;
+    }
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to bottom right, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+      z-index: 1;
+    }
+    video.background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: 0;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    nav h1 {
+      color: #fff;
+      font-size: 26px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffda77;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      padding: 2rem;
+    }
+    .home h2 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+    .home p {
+      font-size: 22px;
+      line-height: 1.6;
+    }
+    .projects {
+      flex-direction: column;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 12px;
+      padding: 2.5rem;
+      margin: 4rem auto;
+      width: 85%;
+      max-width: 960px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+    .projects h3 {
+      font-size: 34px;
+      margin-bottom: 1.5rem;
+    }
+    .projects ul {
+      text-align: left;
+    }
+    .projects li {
+      margin: 12px 0;
+      font-size: 20px;
+    }
+    .projects p {
+      font-size: 18px;
+    }
+    footer {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="background-video">
+    <source src="https://cdn.pixabay.com/video/2024/04/18/203074-919581470_large.mp4" type="video/mp4">
+    Tu navegador no soporta video de fondo.
+  </video>
+  <div class="overlay"></div>
+  <nav>
+    <h1>Suficy</h1>
+    <div>
+      <a href="#home">Inicio</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div>
+      <h2>Hola, soy Suficy 👋</h2>
+      <p>Desarrollador en Discord.js, Python, HTML y más.<br>Apasionado por el diseño, la automatización y los servidores de rol.</p>
+    </div>
+  </section>
+
+  <section id="proyectos" class="projects">
+    <h3>🚀 Proyectos Activos</h3>
+    <ul>
+      <li><strong>🤖 Voflix Bot:</strong> Bot de verificación, tickets, staff y comunidad.</li>
+      <li><strong>🌇 Tijuana RP:</strong> Servidor de Roleplay serio y dinámico en expansión.</li>
+    </ul>
+  </section>
+
+  <section id="contacto" class="projects">
+    <h3>📞 Contacto</h3>
+    <p>¿Querés trabajar conmigo o tenés dudas?<br><strong>Escribime a Discord: <code>Suficy.not</code></strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Suficy | Desarrollador web y bots. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
